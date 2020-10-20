@@ -32,10 +32,10 @@ done
 echo "array values are :"${array[@]}
 
 
-sort=`echo ${array[@]} | awk 'BEGIN{RS=" ";} {print $1}' | sort -n -r`
-counter=0
-for values in $sort
+ascendingsort=`echo ${array[@]} | awk 'BEGIN{RS=" ";}{print $1}' | sort -n`
+counter1=0
+for value in $ascendingsort
 do
-sortedarray[((counter++))]="$values"
+arrayofascending[(( counter1++))]="$value"
 done
-echo "sorted array in descending order are:" ${sortedarray[@]}
+echo "sorted array in ascending order are :" ${arrayofascending[@]}
