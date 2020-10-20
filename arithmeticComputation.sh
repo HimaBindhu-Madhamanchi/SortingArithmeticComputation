@@ -22,3 +22,13 @@ computation[2]=$computation2
 computation[3]=$computation3
 computation[4]=$computation4
 echo "dictionary values are :" ${computation[@]}
+
+variable=${computation[@]}
+for values in $variable
+do
+   array[count]=$values
+   count=$(( $count+1 ))
+done
+echo "array values are :"${array[@]}
+
+
