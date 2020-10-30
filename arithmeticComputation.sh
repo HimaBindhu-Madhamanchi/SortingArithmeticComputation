@@ -17,6 +17,7 @@ computation4=$(( $a%$b+$c ))
 echo "fourth computation is:" $computation4
 
 declare -A computations
+
 computation[1]=$computation1
 computation[2]=$computation2
 computation[3]=$computation3
