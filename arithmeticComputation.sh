@@ -19,6 +19,7 @@ echo "fourth computation is:" $computation4
 declare -A computations
 computation[1]=$computation1
 computation[2]=$computation2
+
 computation[3]=$computation3
 computation[4]=$computation4
 echo "dictionary values are :" ${computation[@]}
