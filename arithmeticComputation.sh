@@ -8,6 +8,7 @@ read -p "Enter number 2 :" b
 read -p "Enter number 3 :" c
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 computation1=$(( $a+$b*$c ))
 echo "first computation is:" $computation1
 
@@ -16,6 +17,8 @@ echo "first computation is:" $computation1
 computation2=$(( $a*$b+$c ))
 echo "second Computation is:"$computation2
 
+=======
+>>>>>>> UC_4ArithmeticOperation3
 computation3=$(( $c+$a/$b ))
 echo "third computation is:"$computation3
 
